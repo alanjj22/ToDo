@@ -1,0 +1,40 @@
+.toDoMain{
+    background-color: rgb(226, 65, 65);
+    min-height: 70vh;
+    width: 50vh;
+    text-align: center;
+}
+
+.input-element{
+    background-color: rgb(255, 5, 5);
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.input-element input{
+    padding: 0px;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+button{
+    font-size: 28px ;
+}
+ul{
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    text-align: left;
+    margin: 20px;
+    font-size: 30px;
+    display: flex;
+}
+
+ul li i{
+    text-align: right;
+    flex: 1;
+}
