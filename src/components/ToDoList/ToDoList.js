@@ -22,6 +22,14 @@ class ToDoList extends Component {
             input: ""
         })
     }
+
+    removeItem = (event) => {
+        var array = this.state.store;
+        array.splice(event,1);
+        this.setState({
+            store: array
+        })
+    }
     
 
     render() {
@@ -36,7 +44,7 @@ class ToDoList extends Component {
                 </div>
                 <ul>
                     { store.map((data , index) => (
-                        <li key={index}>{ data }<i className="fa fa-trash"></i></li>
+                        <li key={index}>{ data }<i onClick={ () => this.removeItem(index)} className="fa fa-trash"></i></li>
                     ))}
                 </ul>
             </div>
